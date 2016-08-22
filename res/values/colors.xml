@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="qianlvse">#008B8B</color>
+    <color name="transparent">#00000000</color>
+    <color name="qianhuise">#C7C7C7</color>
+    <color name="zhonlv">#008B00</color>
+    <color name="qqlan">#1E90FF</color>
+    <color name="red">#AA0000</color>
+    <color name="shenlan">#0000EE</color><!-- 深蓝 -->
+    <color name="shenlv">#006400</color>
+    <color name="orange">#EE4000</color>
+    <color name="actionbar">#3CA4A5</color>
+    <color name="zhonhui">#6E6E6E</color>
+    <color name="anred">#8B0000</color><!-- 暗红 -->
+    <color name="bananred">#558B0000</color><!-- 半暗红 -->
+    <color name="banblack">#55050505</color>
+    <color name="green">#28A600</color>
+    <color name="zhonhei">#38393D</color>
+    <color name="viewqianhui">#7F7F7F</color><!-- view分割线 -->
+
+</resources>

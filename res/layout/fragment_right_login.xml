@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qianhuise"
+    android:padding="3dp"
+    tools:context=".MainActivity" >
+
+    <AutoCompleteTextView
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:hint="请输入用户昵称"
+        android:inputType="text"
+        android:maxLength="20"
+        android:paddingLeft="50dp"
+        android:singleLine="true"
+        android:textColorHint="@color/zhonhui"
+        android:textSize="20dp" 
+        android:completionThreshold="1"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editText_username"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/login_username" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_username"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="密码：6到16位个字符"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="50dp"
+        android:singleLine="true"
+        android:textColorHint="@color/zhonhui"
+        android:textSize="20dp" 
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_password"
+        android:layout_alignTop="@+id/editText_password"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/login_password" />
+
+    <ImageView
+        android:id="@+id/show_password"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/editText_password"
+        android:layout_alignTop="@+id/editText_password"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:paddingLeft="2dp"
+        android:src="@drawable/show_password_pressed" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_password"
+        android:gravity="center_horizontal" 
+        >
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_red_selector"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/button_login"
+            android:background="@drawable/btn_red_selector"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <CheckBox
+            android:id="@+id/password_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_register"
+            android:button="@drawable/fragment_right_login_checkbox"
+            android:text="记住密码"
+            android:layout_margin="5dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/button_forgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:clickable="true"
+        android:text="忘记密码"
+        android:textColor="@color/qqlan"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@id/editText_username"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/right_lijidenglu" />
+
+</RelativeLayout>

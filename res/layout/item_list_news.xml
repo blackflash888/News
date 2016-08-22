@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" 
+    android:background="@color/white">
+    
+
+     <ImageView 
+        android:id="@+id/list_item_news_iv"
+        android:layout_width="80dp"
+    	android:layout_height="70dp"
+    	android:padding="5dp"
+    	android:scaleType="fitXY"
+    	android:layout_marginLeft="5dp"
+    	android:layout_centerVertical="true"
+    	android:layout_marginRight="10dp"
+    	android:src="@drawable/ic_launcher"
+        />
+    
+    <TextView 
+        android:id="@+id/list_item_news_tv1"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="17sp"
+    	android:textStyle="bold"
+    	android:layout_toRightOf="@id/list_item_news_iv"
+    	android:layout_alignTop="@id/list_item_news_iv"
+    	android:text="火影忍者"
+    	android:textColor="@color/black"
+    	android:singleLine="true"
+    	android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/list_item_news_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/list_item_news_iv"
+        android:layout_toRightOf="@+id/list_item_news_iv"
+        android:singleLine="true"
+        android:text="edu.feicui"
+        android:textSize="13sp" 
+        android:layout_marginBottom="5dp"/>
+    
+</RelativeLayout>
